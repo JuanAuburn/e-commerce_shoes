@@ -21,7 +21,17 @@
       <a href="#">SERVICIO AL CLIENTE</a>
       <a href="#">MI CUENTA</a>
     </div>
-    <div class="container py-2">
+    <div class="container">
+      <div class="row py-1 d-block d-lg-none">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <form class="search-bar-footer">
+              <input type="search" placeholder="BUSCAR" aria-label="BUSCAR">
+              <button type="submit">></button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="row">
@@ -37,13 +47,15 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <div class="row justify-content-end">
-            <div class="col-5">
-              <form class="search-bar">
-                <input type="search" placeholder="BUSCAR" aria-label="BUSCAR">
-                <button type="submit">></button>
-              </form>
+        <div class="col-12 col-lg-6 py-2">
+          <div class="row">
+            <div class="col-12 d-none d-lg-block">
+              <div class="row justify-content-end">
+                <form class="search-bar">
+                  <input type="search" placeholder="BUSCAR" aria-label="BUSCAR">
+                  <button type="submit">></button>
+                </form>
+              </div>
             </div>
             <div class="col-12 text-right right-elements-header">
               <a class="right-elements-header-free" href="#">ENVÍO GRATIS PARA PEDIDOS SUPERIORES A $300.000</a>
@@ -65,12 +77,12 @@
 
     <div class="container">
 
-      <div class="row">
+      <div class="row px-3">
         <a href="#" class="link-shoes">HUSHPUPPIESCO / CALZADO / ZAPATILLA HOMBRE PELIKAN</a>
       </div>
       <div class="row">
         <div class="col-12 col-lg-6">
-          <div class="row height_product_img">
+          <div class="row">
             <div class="col-12">
               <img src="images/7.jpg" alt="7" class="product-image" id="product_img">
             </div>
@@ -84,24 +96,24 @@
               <img src="images/2.jpg" alt="2" class="product-image" onclick="editImage('2.jpg')">
             </div>
             <div class="col">
-              <img src="images/3.jpg" alt="3" class="product-image" onclick="editImage('3.jpg')">
+              <img src="images/8.jpg" alt="3" class="product-image" onclick="editImage('8.jpg')">
             </div>
             <div class="col">
               <img src="images/4.jpg" alt="4" class="product-image" onclick="editImage('4.jpg')">
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <div class="row justify-content-end">
-            <div class="col-10">
+        <div class="col-12 col-lg-6 py-4">
+          <div class="row px-4">
+            <div class="col-12">
               <h1 class="title-shoes">ZAPATILLA HOMBRE PELIKAN</h1>
               <h2 class="price-shoes">$00.000</h2>
               <p class="subtitle-shoes-1">Cod. de producto zap-005</p>
               <br>
               <h3 class="subtitle-shoes">COLOR</h3>
               <div class="row">
-                <div class="col-2">
-                  <img src="images/7.jpg" alt="7" class="product-image">
+                <div class="col">
+                  <img src="images/7.jpg" alt="7" class="product-image" style="max-width: 100px;">
                 </div>
               </div>
               <br>
@@ -142,8 +154,12 @@
               <a href="#"><h3 class="subtitle-shoes">GUÍA DE TALLAS</h3></a>
               <br>
               <div class="row">
-                <button type="button" name="button" class="add-button">AÑADIR AL CARRITO</button>
-                <i class="fa fa-heart add-favorite" aria-hidden="true"></i>
+                <div class="col-8">
+                  <button type="button" name="button" class="add-button">AÑADIR AL CARRITO</button>
+                </div>
+                <div class="col-4">
+                  <i class="fa fa-heart add-favorite" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -166,7 +182,7 @@
         <h1>COMPLETA TU LOOK</h1>
       </div>
 
-      <div class="row" id="zapatos_js">
+      <div class="row align-items-end" id="zapatos_js">
       </div>
 
       <div style="padding-top: 50px;">
@@ -198,40 +214,56 @@
 
   <footer>
     <div class="container">
-      <div class="row" style="padding-top: 50px;">
-        <div class="col-3">
+      <div class="row">
+        <div class="col-6 col-lg-3 py-3">
           <a href="#" class="link-shoes bold">SERVICIO AL CLIENTE</a><br><br>
           <a href="#" class="link-shoes">CONTÁCTENOS</a><br>
           <a href="#" class="link-shoes">CAMBIOS Y DEVOLUCIONES</a><br>
           <a href="#" class="link-shoes">POLÍTICAS DE LA TIENDA</a><br>
           <a href="#" class="link-shoes">POLÍTICAS DE DATOS</a>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 py-3">
           <a href="#" class="link-shoes bold">MI CUENTA</a><br><br>
           <a href="#" class="link-shoes">MIS PEDIDOS</a><br>
           <a href="#" class="link-shoes">MIS DEVOLUCIONES</a><br>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 py-3">
           <a href="#" class="link-shoes bold">RECURSOS</a><br><br>
           <a href="#" class="link-shoes">TIENDAS</a><br>
           <a href="#" class="link-shoes">DEVOLUCIONES</a><br>
         </div>
-        <div class="col-3">
+        <div class="col-6 col-lg-3 py-3">
           <a href="#" class="link-shoes bold">NEWSLETTER</a><br><br>
           <a href="#" class="link-shoes">Regístrate para ser el primero en recibir nuevas noticias</a><br>
-          <form class="search-bar">
-            <input type="search" placeholder="BUSCAR" aria-label="BUSCAR">
-            <button type="submit">></button>
-          </form>
+          <div class="row">
+            <div class="col-12">
+              <div class="row justify-content-end">
+                <form class="search-bar-footer">
+                  <input type="search" placeholder="BUSCAR" aria-label="BUSCAR">
+                  <button type="submit">></button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="text-center" style="padding-top: 50px;">
-        <hr class="hr-separator">
-        <img src="images/rise-agency.png" alt="rise" class="icon_enterprise">
-        <img src="images/enterprise_1.png" alt="rise" class="icon_enterprise_2">
-        <img src="images/enterprise_2.png" alt="rise" class="icon_enterprise_n">
-        <img src="images/enterprise_3.png" alt="rise" class="icon_enterprise_n">
-        <img src="images/enterprise_4.png" alt="rise" class="icon_enterprise_n">
+      <hr class="hr-separator">
+      <div class="row justify-content-center">
+        <div class="col text-center py-1">
+          <img src="images/rise-agency.png" alt="rise" class="icon_enterprise">
+        </div>
+        <div class="col text-center py-1">
+          <img src="images/enterprise_1.png" alt="rise" class="icon_enterprise_n">
+        </div>
+        <div class="col text-center py-1">
+          <img src="images/enterprise_2.png" alt="rise" class="icon_enterprise_n">
+        </div>
+        <div class="col text-center py-1">
+          <img src="images/enterprise_3.png" alt="rise" class="icon_enterprise_n">
+        </div>
+        <div class="col text-center py-1">
+          <img src="images/enterprise_4.png" alt="rise" class="icon_enterprise_n">
+        </div>
       </div>
     </div>
   </footer>

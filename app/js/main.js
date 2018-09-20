@@ -5,8 +5,10 @@ function getZapatos() {
       data.forEach(function(zapato){
         console.log(zapato);
         textToAdd = '<div class="col-6 col-lg-3 my-3">';
-          textToAdd += '<div class="height-img">';
-            textToAdd += '<img src="images/'+zapato.foto+'" class="product-image"> </img>';
+          textToAdd += '<div class="row">';
+            textToAdd += '<div class="col">';
+              textToAdd += '<img src="images/'+zapato.foto+'" class="product-image"> </img>';
+            textToAdd += '</div>';
           textToAdd += '</div>';
           textToAdd += '<div class="row">';
             textToAdd += '<div class="col text-center">';
